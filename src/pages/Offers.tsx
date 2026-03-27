@@ -1,7 +1,6 @@
 import { openBooking } from '../utils/booking';
 
 const offerImages = [
-  { id: 'offer-1', src: import.meta.env.BASE_URL + 'offers/1772646969599.png', alt: 'Special Offer' },
   { id: 'offer-2', src: import.meta.env.BASE_URL + 'offers/Instagram post - 600.jpg', alt: 'Salon Offer' },
   { id: 'offer-3', src: import.meta.env.BASE_URL + 'offers/Instagram post - 603.jpg', alt: 'Salon Offer' },
   { id: 'offer-4', src: import.meta.env.BASE_URL + 'offers/Picsart_26-02-23_19-37-01-587.png', alt: 'Salon Offer' },
