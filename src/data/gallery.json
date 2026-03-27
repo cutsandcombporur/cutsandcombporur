@@ -1,0 +1,172 @@
+[
+  {
+    "id": "bridal-001",
+    "category": "bridal",
+    "beforeUrl": "/images/gallery/bridal-001-before.jpg",
+    "afterUrl": "/images/gallery/bridal-001-after.jpg",
+    "title": "Traditional South Indian Bridal Makeover",
+    "description": "Complete bridal transformation with traditional makeup and hair styling",
+    "uploadDate": "2024-01-15T10:30:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "bridal-002",
+    "category": "bridal",
+    "beforeUrl": "/images/gallery/bridal-002-before.jpg",
+    "afterUrl": "/images/gallery/bridal-002-after.jpg",
+    "title": "Contemporary Bridal Look",
+    "description": "Modern bridal makeup with elegant hair styling and accessories",
+    "uploadDate": "2024-01-20T14:00:00Z",
+    "isInfluencer": true
+  },
+  {
+    "id": "bridal-003",
+    "category": "bridal",
+    "beforeUrl": "/images/gallery/bridal-003-before.jpg",
+    "afterUrl": "/images/gallery/bridal-003-after.jpg",
+    "title": "Reception Bridal Makeover",
+    "description": "Glamorous reception look with sophisticated makeup and hairstyle",
+    "uploadDate": "2024-01-25T09:15:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "bridal-004",
+    "category": "bridal",
+    "beforeUrl": "/images/gallery/bridal-004-before.jpg",
+    "afterUrl": "/images/gallery/bridal-004-after.jpg",
+    "title": "Engagement Ceremony Makeover",
+    "description": "Elegant engagement look with natural makeup and classic hairstyle",
+    "uploadDate": "2024-02-01T11:45:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "mens-grooming-001",
+    "category": "mens-grooming",
+    "beforeUrl": "/images/gallery/mens-grooming-001-before.jpg",
+    "afterUrl": "/images/gallery/mens-grooming-001-after.jpg",
+    "title": "Premium Haircut & Beard Styling",
+    "description": "Complete transformation with modern haircut and professional beard grooming",
+    "uploadDate": "2024-01-18T16:20:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "mens-grooming-002",
+    "category": "mens-grooming",
+    "beforeUrl": "/images/gallery/mens-grooming-002-before.jpg",
+    "afterUrl": "/images/gallery/mens-grooming-002-after.jpg",
+    "title": "Groom Grooming Package",
+    "description": "Complete groom makeover with facial, haircut, and beard styling",
+    "uploadDate": "2024-01-22T13:30:00Z",
+    "isInfluencer": true
+  },
+  {
+    "id": "mens-grooming-003",
+    "category": "mens-grooming",
+    "beforeUrl": "/images/gallery/mens-grooming-003-before.jpg",
+    "afterUrl": "/images/gallery/mens-grooming-003-after.jpg",
+    "title": "Classic Gentleman's Cut",
+    "description": "Timeless haircut with clean beard trim and styling",
+    "uploadDate": "2024-01-28T10:00:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "mens-grooming-004",
+    "category": "mens-grooming",
+    "beforeUrl": "/images/gallery/mens-grooming-004-before.jpg",
+    "afterUrl": "/images/gallery/mens-grooming-004-after.jpg",
+    "title": "Modern Fade & Beard Design",
+    "description": "Contemporary fade haircut with creative beard design",
+    "uploadDate": "2024-02-03T15:45:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "mens-grooming-005",
+    "category": "mens-grooming",
+    "beforeUrl": "/images/gallery/mens-grooming-005-before.jpg",
+    "afterUrl": "/images/gallery/mens-grooming-005-after.jpg",
+    "title": "Executive Grooming Package",
+    "description": "Professional grooming with premium haircut and facial treatment",
+    "uploadDate": "2024-02-05T12:00:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "hair-color-001",
+    "category": "hair-color",
+    "beforeUrl": "/images/gallery/hair-color-001-before.jpg",
+    "afterUrl": "/images/gallery/hair-color-001-after.jpg",
+    "title": "Balayage Hair Coloring",
+    "description": "Natural-looking balayage with warm tones and highlights",
+    "uploadDate": "2024-01-17T14:30:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "hair-color-002",
+    "category": "hair-color",
+    "beforeUrl": "/images/gallery/hair-color-002-before.jpg",
+    "afterUrl": "/images/gallery/hair-color-002-after.jpg",
+    "title": "Full Hair Color Transformation",
+    "description": "Complete hair color change with rich chocolate brown shade",
+    "uploadDate": "2024-01-23T11:00:00Z",
+    "isInfluencer": true
+  },
+  {
+    "id": "hair-color-003",
+    "category": "hair-color",
+    "beforeUrl": "/images/gallery/hair-color-003-before.jpg",
+    "afterUrl": "/images/gallery/hair-color-003-after.jpg",
+    "title": "Caramel Highlights",
+    "description": "Dimensional caramel highlights for added depth and shine",
+    "uploadDate": "2024-01-29T09:30:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "hair-color-004",
+    "category": "hair-color",
+    "beforeUrl": "/images/gallery/hair-color-004-before.jpg",
+    "afterUrl": "/images/gallery/hair-color-004-after.jpg",
+    "title": "Ombre Hair Coloring",
+    "description": "Stunning ombre effect from dark roots to lighter ends",
+    "uploadDate": "2024-02-02T16:15:00Z",
+    "isInfluencer": false
+  },
+  {
+    "id": "hair-color-005",
+    "category": "hair-color",
+    "beforeUrl": "/images/gallery/hair-color-005-before.jpg",
+    "afterUrl": "/images/gallery/hair-color-005-after.jpg",
+    "title": "Platinum Blonde Transformation",
+    "description": "Bold platinum blonde color with professional toning",
+    "uploadDate": "2024-02-06T13:20:00Z",
+    "isInfluencer": true
+  },
+  {
+    "id": "influencer-001",
+    "category": "influencer",
+    "beforeUrl": "/images/gallery/influencer-001-before.jpg",
+    "afterUrl": "/images/gallery/influencer-001-after.jpg",
+    "title": "Local Influencer Bridal Shoot",
+    "description": "Collaboration with Chennai fashion influencer for bridal portfolio",
+    "uploadDate": "2024-01-21T10:00:00Z",
+    "isInfluencer": true
+  },
+  {
+    "id": "influencer-002",
+    "category": "influencer",
+    "beforeUrl": "/images/gallery/influencer-002-before.jpg",
+    "afterUrl": "/images/gallery/influencer-002-after.jpg",
+    "title": "Men's Grooming Influencer Collab",
+    "description": "Featured grooming transformation with popular lifestyle influencer",
+    "uploadDate": "2024-01-26T14:45:00Z",
+    "isInfluencer": true
+  },
+  {
+    "id": "influencer-003",
+    "category": "influencer",
+    "beforeUrl": "/images/gallery/influencer-003-before.jpg",
+    "afterUrl": "/images/gallery/influencer-003-after.jpg",
+    "title": "Hair Color Transformation Feature",
+    "description": "Stunning hair color makeover featured by beauty influencer",
+    "uploadDate": "2024-02-04T11:30:00Z",
+    "isInfluencer": true
+  }
+]
