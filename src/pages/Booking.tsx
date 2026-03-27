@@ -61,7 +61,7 @@ function Booking() {
             <h2 className="text-2xl font-bold mb-2">Booking Submitted!</h2>
             <p className="text-secondary-600 mb-4">Thank you, {name}. We'll confirm your appointment shortly.</p>
             <p className="text-secondary-500 text-sm mb-6">Date: {date}{time && ` | Time: ${time}`}</p>
-            <a href="/" className="btn-primary inline-block px-6 py-3">Back to Home</a>
+            <a href={import.meta.env.BASE_URL} className="btn-primary inline-block px-6 py-3">Back to Home</a>
           </div>
         </div>
       </div>

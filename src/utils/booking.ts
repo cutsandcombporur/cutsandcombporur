@@ -1,15 +1,9 @@
-/**
- * Returns the booking page URL with optional pre-selected service
- * @param serviceId - Optional service ID to pre-select
- */
+const BASE = import.meta.env.BASE_URL;
+
 export function getBookingUrl(serviceId?: string): string {
-  return serviceId ? `/booking?service=${serviceId}` : '/booking';
+  return serviceId ? `${BASE}booking?service=${serviceId}` : `${BASE}booking`;
 }
 
-/**
- * Navigates to the booking page (fallback for non-component usage)
- * @param serviceId - Optional service ID to pre-select
- */
 export function openBooking(serviceId?: string): void {
   window.location.href = getBookingUrl(serviceId);
 }
