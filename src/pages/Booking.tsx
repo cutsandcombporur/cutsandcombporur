@@ -38,21 +38,6 @@ function Booking() {
       body: JSON.stringify({ name, date, time, service: serviceName, contact: contactNo }),
     }).catch(() => {});
 
-    // Build WhatsApp message
-    const message = [
-      `Hi! I'd like to book an appointment at Cuts & Comb.`,
-      ``,
-      `*Name:* ${name}`,
-      `*Date:* ${date}`,
-      time ? `*Time:* ${time}` : '',
-      `*Service:* ${serviceName}`,
-      `*Contact:* ${contactNo}`,
-    ]
-      .filter(Boolean)
-      .join('\n');
-
-    const whatsappUrl = `https://wa.me/919994421126?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
     setSubmitted(true);
   };
 
