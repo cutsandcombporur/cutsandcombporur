@@ -19,6 +19,7 @@ function Booking() {
   const [service, setService] = useState(preSelectedService);
   const [contactNo, setContactNo] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [serviceSearch, setServiceSearch] = useState('');
 
   // Flatten all services from male and female into a single list
   const allServices: ServiceOption[] = Object.values(servicesData)
@@ -99,18 +100,21 @@ function Booking() {
 
           <div>
             <label htmlFor="service" className="block text-sm font-medium text-secondary-700 mb-1">Service Required</label>
-            <select
-              id="service"
-              required
-              value={service}
-              onChange={(e) => setService(e.target.value)}
+            <input
+              type="text"
+              placeholder="Search and select a service..."
+              value={serviceSearch}
+              onChange={(e) => { setServiceSearch(e.target.value); setService(''); }}
               className="w-full border border-secondary-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-            >
-              <option value="">Select a service</option>
-              {allServices.map((s) => (
-                <option key={s.id} value={s.id}>{s.name}</option>
-              ))}
-            </select>
+            />
+            <input type="hidden" required value={service} />
+            {serviceSearch && !service && (
+              <ul className="mt-1 max-h-48 overflow-y-auto border border-secondary-200 rounded-lg bg-white shadow-md">
+                {allServices.filter((s) => s.name.toLowerCase().includes(serviceSearch.toLowerCase())).map((s) => (
+                  <li key={s.id} onClick={() => { setService(s.id); setServiceSearch(s.name); }} className="px-4 py-2 cursor-pointer hover:bg-primary-50 text-sm">{s.name}</li>
+                ))}
+              </ul>
+            )}
           </div>
 
           <div>
