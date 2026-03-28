@@ -34,7 +34,7 @@ function Booking() {
     const serviceName = selectedService ? selectedService.name : serviceSearch;
 
     // Save to Google Sheet
-    fetch('https://script.google.com/macros/s/AKfycbxZ2H1ig8T_vTnGFZIS6qQ08Ar2YCvpTeXH586pFgtMlXMe1Zk3vGhNBhEFsCSivXo35A/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbylWDL4iVsZK0NtjLQLVza9D26qzlYNoi_Ha5hYQm-4RAs3r3lXisKdcspfno5i0D05lQ/exec', {
       method: 'POST', mode: 'no-cors',
       body: JSON.stringify({ name, date, time, service: serviceName, contact: contactNo }),
     }).catch(() => {});
