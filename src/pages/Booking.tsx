@@ -25,12 +25,18 @@ function Booking() {
     .flatMap((gender) => Object.values(gender).flat())
     .map((s: any) => ({ id: s.id, name: s.name, category: s.category }));
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     // Find the selected service name
     const selectedService = allServices.find((s) => s.id === service);
     const serviceName = selectedService ? selectedService.name : service;
+
+    // Save to Google Sheet
+    fetch('https://script.google.com/macros/s/AKfycbxZ2H1ig8T_vTnGFZIS6qQ08Ar2YCvpTeXH586pFgtMlXMe1Zk3vGhNBhEFsCSivXo35A/exec', {
+      method: 'POST',
+      body: JSON.stringify({ name, date, time, service: serviceName, contact: contactNo }),
+    }).catch(() => {});
 
     // Build WhatsApp message
     const message = [
