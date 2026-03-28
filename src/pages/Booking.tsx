@@ -31,11 +31,11 @@ function Booking() {
 
     // Find the selected service name
     const selectedService = allServices.find((s) => s.id === service);
-    const serviceName = selectedService ? selectedService.name : service;
+    const serviceName = selectedService ? selectedService.name : serviceSearch;
 
     // Save to Google Sheet
     fetch('https://script.google.com/macros/s/AKfycbxZ2H1ig8T_vTnGFZIS6qQ08Ar2YCvpTeXH586pFgtMlXMe1Zk3vGhNBhEFsCSivXo35A/exec', {
-      method: 'POST',
+      method: 'POST', mode: 'no-cors',
       body: JSON.stringify({ name, date, time, service: serviceName, contact: contactNo }),
     }).catch(() => {});
 
@@ -102,13 +102,12 @@ function Booking() {
             <label htmlFor="service" className="block text-sm font-medium text-secondary-700 mb-1">Service Required</label>
             <input
               type="text"
-              placeholder="Search and select a service..."
+              placeholder="Search or type a service..." required
               value={serviceSearch}
               onChange={(e) => { setServiceSearch(e.target.value); setService(''); }}
               className="w-full border border-secondary-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             />
-            <input type="hidden" required value={service} />
-            {serviceSearch && !service && (
+            {serviceSearch && !service && allServices.filter((s) => s.name.toLowerCase().includes(serviceSearch.toLowerCase())).length > 0 && (
               <ul className="mt-1 max-h-48 overflow-y-auto border border-secondary-200 rounded-lg bg-white shadow-md">
                 {allServices.filter((s) => s.name.toLowerCase().includes(serviceSearch.toLowerCase())).map((s) => (
                   <li key={s.id} onClick={() => { setService(s.id); setServiceSearch(s.name); }} className="px-4 py-2 cursor-pointer hover:bg-primary-50 text-sm">{s.name}</li>
